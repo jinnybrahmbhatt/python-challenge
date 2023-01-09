@@ -71,6 +71,6 @@ with open ("analysis.txt","w") as txt:
     txt.write (f"Total Votes:{Total_Votes}\n")
     txt.write(f"---------------------------------------------\n")
     for candidate,votes in Votes_per_candidate.items():
-        (f"{candidate}: {round((votes/Total_Votes * 100 ),3)}% {votes}\n")
+        txt.write(f"{candidate}: {round((votes/Total_Votes * 100 ),3)}% {votes}\n")
     txt.write(f"---------------------------------------------\n")
     txt.write(f"Winner: {winner}")

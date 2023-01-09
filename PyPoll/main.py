@@ -65,7 +65,7 @@ with open(csvpath) as file:
     print("Winner: ",winner)
   
 #output file
-with open ("Election_Results.txt","w") as txt:
+with open ("analysis.txt","w") as txt:
     txt.write(f"Election Results\n")
     txt.write(f"---------------------------------------------\n")
     txt.write (f"Total Votes:{Total_Votes}\n")

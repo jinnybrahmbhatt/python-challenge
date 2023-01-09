@@ -64,7 +64,9 @@ with open(csvpath) as file:
     print(f"Greatest Decrease in Profits: {GID_Month}  (${GID})")
 
 #output file
-with open ("Financial Analysis.txt","w") as txt:
+# Specify the file to write to
+#output_path = os.path.join("analysis",  "Financial Analysis.txt")
+with open ('analysis.txt','w') as txt:
     txt.write("Financial Analysis\n")
     txt.write(f"---------------------------------------------\n")
     txt.write(f"Total Months: {periodmonths}\n")
